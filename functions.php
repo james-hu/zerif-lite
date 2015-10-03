@@ -298,9 +298,7 @@ function zerif_scripts()
 
 
     //wp_enqueue_style('zerif_font', zerif_slug_fonts_url(), array(), null );
-    wp_enqueue_style( 'zerif_font_lato', get_template_directory_uri() . '/css/lato_font_347.css');
-    wp_enqueue_style( 'zerif_font_montserrat', get_template_directory_uri() . '/css/montserrat_font_47.css');
-    wp_enqueue_style( 'zerif_font_homemade-apple', get_template_directory_uri() . '/css/homemade-apple_font.css');
+    wp_enqueue_style( 'zerif_font', get_template_directory_uri() . '/css/zerif_slug_fonts.css');
 
     //wp_enqueue_style( 'zerif_font_all', '//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600italic,600,700,700italic,800,800italic');
     wp_enqueue_style( 'zerif_font_all', get_template_directory_uri() . '/css/open-sans_font_34678.css');
