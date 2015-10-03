@@ -60,20 +60,20 @@
 
 ============================== -->
 <?php
-	
+
  global $wp_customize;
 
- if(is_front_page() && !isset( $wp_customize ) && get_option( 'show_on_front' ) != 'page' ): 
- 
+ if(is_front_page() && !isset( $wp_customize ) && get_option( 'show_on_front' ) != 'page' ):
+
 	$zerif_disable_preloader = get_theme_mod('zerif_disable_preloader');
-	
+
 	if( isset($zerif_disable_preloader) && ($zerif_disable_preloader != 1)):
-		 
+
 		echo '<div class="preloader">';
 			echo '<div class="status">&nbsp;</div>';
 		echo '</div>';
-		
-	endif;	
+
+	endif;
 
 endif; ?>
 
@@ -82,7 +82,7 @@ endif; ?>
 
 	<div id="main-nav" class="navbar navbar-inverse bs-docs-nav" role="banner">
 
-		<div class="container">
+		<div class="container-fluid">
 
 			<div class="navbar-header responsive-logo">
 
@@ -115,15 +115,15 @@ endif; ?>
 					else:
 
 						echo '<a href="'.esc_url( home_url( '/' ) ).'" class="navbar-brand">';
-						
+
 							if( file_exists(get_stylesheet_directory()."/images/logo.png")):
-							
+
 								echo '<img src="'.get_stylesheet_directory_uri().'/images/logo.png" alt="'.get_bloginfo('title').'">';
-							
+
 							else:
-								
+
 								echo '<img src="'.get_template_directory_uri().'/images/logo.png" alt="'.get_bloginfo('title').'">';
-								
+
 							endif;
 
 						echo '</a>';
