@@ -46,7 +46,7 @@ get_header(); ?>
 
 			<div class="entry-content">
 
-				<p><?php _e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'zerif-lite' ); ?></p>
+				<p><?php _e( 'It looks like nothing was found at this location. Maybe try one of the links in the menu above?', 'zerif-lite' ); ?></p>
 
 				
 
